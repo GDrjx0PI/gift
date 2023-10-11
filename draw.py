@@ -36,7 +36,6 @@ def main():
     else:
         st.title("当たり!")
         st.write("↓景品のAmazonギフト券↓")
-        st.write("AQ2U-MJJXAE-EHWC6")
         st.write(
             st.secrets["Amazon"]["amazon_number"]
         )
