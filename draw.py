@@ -43,6 +43,8 @@ def main():
         st.write(
             st.secrets["Amazon"]["amazon_number"]
         )
+        st.write("")
+        st.write("また今度行きます!")
 
 
 def read(file_path):
