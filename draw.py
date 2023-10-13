@@ -35,7 +35,11 @@ def main():
         print("1", st.session_state.red_flag, st.session_state.blue_flag)
     else:
         st.title("当たり!")
-        st.write("↓景品のAmazonギフト券↓")
+        st.write("")
+        if st.session_state.red_flag == "1":
+            st.write("↓Amazonギフト券↓")
+        else:
+            st.write("Amazonギフト券↓")
         st.write(
             st.secrets["Amazon"]["amazon_number"]
         )
