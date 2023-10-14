@@ -34,15 +34,15 @@ def main():
         
         print("1", st.session_state.red_flag, st.session_state.blue_flag)
     else:
-        st.title("当たり!")
-        st.write("")
         if st.session_state.red_flag == "1":
+            st.title("当たり!")
+            st.write("")
             st.write("↓Amazonギフト券↓")
+            st.write(
+                st.secrets["Amazon"]["amazon_number"]
+            )
         else:
-            st.write("Amazonギフト券↓")
-        st.write(
-            st.secrets["Amazon"]["amazon_number"]
-        )
+            st.title("はずれ")
         st.write("")
         st.write("また今度行きます!")
 
